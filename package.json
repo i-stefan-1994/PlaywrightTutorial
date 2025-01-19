@@ -1,0 +1,17 @@
+{
+  "name": "playwrighttutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:smoke": "npx playwright test test --grep @smoke",
+    "test: all": "npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.7"
+  }
+}
