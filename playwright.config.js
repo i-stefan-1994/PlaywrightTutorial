@@ -46,17 +46,17 @@ const config = {
       name: 'chromium',
       use: {
         browserName: 'chromium',
-        headless: false,
+        headless: true,
         screenshot: 'only-on-failure',
         video: 'retain-on-failure',
         baseURL: 'https://example.com',
         trace: 'on-first-retry',
       },
     },
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
     // {
     //   name: 'webkit',
     //   use: { ...devices['Desktop Safari'] },
