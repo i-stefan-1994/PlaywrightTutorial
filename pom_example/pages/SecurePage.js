@@ -12,7 +12,7 @@ export default class SecurePage{
 
     //assertions should be in the test case, but for this example, we will have it in the page object
     async assertLoggedInMessage(passedMessage){
-        const message = this.getMessage()
+        const message = await this.getMessage()
         expect(message).toContain(passedMessage);
     }
 }

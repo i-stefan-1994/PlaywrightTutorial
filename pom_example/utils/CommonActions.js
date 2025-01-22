@@ -21,7 +21,7 @@ export default class CommonActions{
             throw new Error("No text found for the given selector")
         }
 
-        return text().trim();
+        return text.trim();
     }
 
     async isChecked(selector){
